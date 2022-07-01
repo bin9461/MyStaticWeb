@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    font-family: 方正兰亭纤黑_GBK;
+    font-weight: 900;
+    /*鼠标*/
+    cursor: url(../images/pointer.png),auto;
+}
+
+p {
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    /*background: #003371;*/
+    background-image: url(../images/1.jpg);
+    opacity: 0.86;
+    /*filter: alpha(opacity=80);*/
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #e8bab7,#DDD6F3, #ddd6f3,#e8bab7);
+}
+
+header {
+    width: 100%;
+    height: 520px;
+    background-image: url(../images/1.jpg);
+    /*background-color: #34415f;*/
+    background-size: cover;
+    opacity: 0.86;
+    filter: alpha(opacity=80);
+
+}
+
+div.poster-container {
+    width: 1158px;
+    height: 580px;
+    position: relative;
+    margin: 0px auto;
+}
+
+div.content {
+    position: absolute;
+}
+
+dl.title {
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+dl.title > h1 {
+    padding-left: 1.25em;
+}
+
+dl.title > dd {
+    display: block;
+    overflow: hidden;
+    width: 42%;
+    font-size: 0.9em;
+    text-indent: 1.9em;
+    color: #eee;
+    line-height: 300%;
+}
+
+article {
+    width: 1000px;
+    height: auto;
+    /*background-color: #e9e7ef;*/
+    background-image: url(../images/195f51e43a4f7f6a9ea61e6987b8be8.jpg);
+    position: relative;
+    margin: -200px auto 50px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 14px 1px gray inset;
+    /*opacity: 0.95;*/
+
+}
+
+h3 {
+    padding-left: 1%;
+    width: 8%;
+    float: left;
+    border-left: 20px solid #4b5988;
+    border-bottom: 2px solid #4b5988;
+    /*opacity: 0.86;*/
+    border-radius: 9px;
+
+}
+
+li a {
+    text-decoration: none;
+}
+
+nav > ul {
+    position: relative;
+    line-height: 300%;
+    list-style: none;
+    height: 3em;
+    margin: 0;
+    padding: 0 0 0 1em;
+    color: rgb(109, 128, 218);
+}
+
+nav > ul > li {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav > ul > li ~ div {
+    background-color: #c0d4e7;
+    width: 80px;
+    height: 3em;
+    transition: left 0.5s;
+    position: absolute;
+    top: 0;
+    left: 1em;
+    border-radius: 30px;
+}
+
+nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #3d4679;
+    display: block;
+    font-family: "Droid Sans Mono";
+    font-weight: 1000;
+}
+
+nav > ul > li:nth-child(2):hover ~ div {
+    left: 6.5em;
+}
+
+nav > ul > li:nth-child(3):hover ~ div {
+    left: 11.5em;
+}
+
+nav > ul > li:nth-child(4):hover ~ div {
+    left: 17em;
+}
+
+nav > ul > li:nth-child(5):hover ~ div {
+    left: 22em;
+}
+
+:target {
+    display: block;
+}
+
+::selection {
+    color: #a36ab2;
+}
+
+.box {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    position: relative;
+}
+.comment {
+    animation: rolling 1000s linear infinite;
+    position: absolute;
+    display: flex;
+}
+.comment img {
+    height: 200px;
+    width: 180px;
+    float: left;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+
+@keyframes rolling {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.comment:hover {
+    animation-play-state: paused;
+}
+
+.fundamental p {
+    margin: 1px;
+    padding: 1px;
+    text-align: left;
+}
+
+audio {
+    display: none;
+}
+
+.hddb a img {
+    position: relative;
+    left: 95%;
+    bottom: 30px;
+}
+
+table {
+    display: none;
+}
+
+:target {
+    display: block;
+}
+
+#yj a, #yj p {
+    text-decoration: none;
+    text-align: center;
+}
+
+#yj a {
+    font-weight: 1000;
+    color: #6d80da;
+}
+
+.copy {
+    font-weight: 600;
+}
+
+p{
+    font-weight: 500;
+}
+
+.boxright {
+    font-family: 幼圆;
+    font-weight: 300;
+    margin-top: 110px;
+    margin-left: 1000px;
+    color:#FFE4E1 ;
+}
+.mh{
+    position: relative;
+    /*top: 0; bottom: 0;*/
+    /*left: 0; right: 0;*/
+    width: 300px;
+    height: 290px;
+    line-height: 2;
+    margin:100px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
+    /*overflow: hidden;*/
+}
